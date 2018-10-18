@@ -1,0 +1,26 @@
+{
+	"name": "@omgjs/react-boilerplate",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"start": "turbo start",
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"author": "",
+	"license": "ISC",
+	"eslintConfig": {
+		"extends": "@omgjs/eslint-config-react"
+	},
+	"babel": {
+		"extends": "@omgjs/babel-config-react"
+	},
+	"dependencies": {
+		"lodash": "^4.17.11",
+		"prop-types": "^15.6.2",
+		"react": "^16.5.2",
+		"react-dom": "^16.5.2"
+	},
+	"devDependencies": {
+		"@omgjs/turbo": "x"
+	}
+}
