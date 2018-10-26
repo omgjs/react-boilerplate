@@ -1,16 +1,20 @@
 import React from "react";
-import Menu from "components/Menu";
+import { componentWithPropTypes } from "@omgJS/turbo";
+import { shape, func } from "prop-types";
 
-export default props => {
-	console.debug("props", props); // eslint-disable-line no-console
-	return (
+/* component */
+export default componentWithPropTypes(
+	({ history }) => (
 		<div>
-			<Menu {...props} />
-			<br />
 			Page with props
-			<button type="button" onClick={() => props.history.goBack()}>
+			<button type="button" onClick={() => history.goBack()}>
 				Go back
 			</button>
 		</div>
-	);
-};
+	),
+	{
+		history: shape({
+			goBack: func.isRequired,
+		}).isRequired,
+	},
+);
