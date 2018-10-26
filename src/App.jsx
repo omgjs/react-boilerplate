@@ -1,8 +1,13 @@
-import React from "react";
-import ReactDOM from "react-dom";
+import { initApplication } from "@omgjs/turbo";
 
 import Home from "pages/Home";
+import Page from "pages/Page";
+import PageWithParam from "pages/PageWithParam";
 
-const App = () => <Home />;
+const routes = {
+	"/": Home,
+	"/page": Page,
+	"/page/:param": PageWithParam,
+};
 
-ReactDOM.render(<App />, document.getElementById("app"));
+initApplication(routes);

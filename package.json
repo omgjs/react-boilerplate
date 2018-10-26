@@ -1,26 +1,29 @@
 {
-	"name": "@omgjs/react-boilerplate",
-	"description": "",
-	"main": "index.js",
-	"scripts": {
-		"start": "turbo start",
-		"test": "echo \"Error: no test specified\" && exit 1"
-	},
-	"author": "",
-	"license": "ISC",
-	"eslintConfig": {
-		"extends": "@omgjs/eslint-config-react"
-	},
-	"babel": {
-		"extends": "@omgjs/babel-config-react"
-	},
-	"dependencies": {
-		"lodash": "^4.17.11",
-		"prop-types": "^15.6.2",
-		"react": "^16.5.2",
-		"react-dom": "^16.5.2"
-	},
-	"devDependencies": {
-		"@omgjs/turbo": "x"
-	}
+  "name": "@omgjs/react-boilerplate",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "turbo start",
+    "build": "turbo build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "eslintConfig": {
+    "extends": "@omgjs/eslint-config-react"
+  },
+  "babel": {
+    "extends": "@omgjs/babel-config-react"
+  },
+  "dependencies": {
+    "lodash": "^4.17.11",
+    "prop-types": "^15.6.2",
+    "react": "^16.5.2",
+		"react-dom": "^16.5.2",
+		"react-redux": "^5.0.7",
+    "react-router-dom": "^4.3.1"
+  },
+  "devDependencies": {
+    "@omgjs/turbo": "^1.0.7"
+  }
 }

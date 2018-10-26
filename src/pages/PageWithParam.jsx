@@ -5,9 +5,12 @@ export default props => {
 	console.debug("props", props); // eslint-disable-line no-console
 	return (
 		<div>
-			<Menu />
+			<Menu {...props} />
 			<br />
-			Home
+			Page with props
+			<button type="button" onClick={() => props.history.goBack()}>
+				Go back
+			</button>
 		</div>
 	);
 };
