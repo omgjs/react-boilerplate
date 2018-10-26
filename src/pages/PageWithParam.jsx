@@ -2,7 +2,6 @@ import React from "react";
 import { componentWithPropTypes } from "@omgJS/turbo";
 import { shape, func } from "prop-types";
 
-/* component */
 export default componentWithPropTypes(
 	({ history }) => (
 		<div>
