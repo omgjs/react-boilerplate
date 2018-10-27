@@ -1,3 +1,9 @@
 import React from "react";
 
-export default () => <div>Home</div>;
+import ReadmeMD from "../../README.md";
+
+export default () => (
+	<div>
+		<ReadmeMD />
+	</div>
+);

@@ -5,12 +5,13 @@ import Menu from "components/Menu";
 /* eslint-disable react/prefer-stateless-function */
 export default class extends PureComponent {
 	static propTypes = {
-		content: func.isRequired,
+		content: func,
 	};
 
 	static defaultProps = {};
 
 	render() {
+		console.debug("props", this.props);
 		const Content = this.props.content; // eslint-disable-line react/destructuring-assignment
 		return (
 			<div>
