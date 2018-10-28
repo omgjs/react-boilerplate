@@ -19,7 +19,9 @@ export default class extends PureComponent {
 				<header>
 					<Menu />
 				</header>
-				<Content />
+				<div className="content">
+					<Content />
+				</div>
 			</>
 		);
 	}
