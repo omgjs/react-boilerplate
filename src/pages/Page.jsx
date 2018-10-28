@@ -15,4 +15,4 @@ export default () => (
 	</div>
 );
 
-const Loader = () => <div>Loading...</div>;
+const Loader = () => <h1>Loading...</h1>;
