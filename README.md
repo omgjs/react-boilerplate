@@ -6,9 +6,10 @@ To write good optimized components there are few rules, that you need to follow
 
 This is very good time saving feature of React. [Article about it](https://habr.com/company/redmadrobot/blog/318222/)
 
+===
 This is bad:
 
-```javascript
+```html
 <Entity values={this.props.values || []} />
 ```
 
@@ -16,9 +17,10 @@ This is good:
 Use DefaultProps in component itself instead of **this.props.values || []**,
 when you call it
 
+===
 This is bad:
 
-```javascript
+```html
 <CustomInput onChange={e => this.props.update(e.target.value)} />
 ```
 
@@ -52,3 +54,7 @@ this.setState(prevState => ({
 
 It makes it easier to check props/state changes in shouldComponentUpdate method.
 You don't need to check data, but only to check pointer/pointers to data.
+
+## Emoji
+
+🤘🤟💪😜😍❤️
