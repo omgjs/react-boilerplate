@@ -11,7 +11,6 @@ export default class extends PureComponent {
 	static defaultProps = {};
 
 	render() {
-		// console.debug("props", this.props); // eslint-disable-line no-console
 		const Content = this.props.content; // eslint-disable-line react/destructuring-assignment
 		const Menu = this.props.menu; // eslint-disable-line react/destructuring-assignment
 		return (

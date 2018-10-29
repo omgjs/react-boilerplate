@@ -1,4 +1,4 @@
-import { initApplication } from "@omgJS/turbo";
+import { initApplication } from "@omgjs/turbo";
 
 import MainLayout from "layouts/MainLayout";
 

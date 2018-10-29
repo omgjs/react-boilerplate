@@ -1,5 +1,5 @@
 import React from "react";
-import { componentWithPropTypes } from "@omgJS/turbo";
+import { componentWithPropTypes } from "@omgjs/turbo";
 import { shape, func } from "prop-types";
 
 export default componentWithPropTypes(
