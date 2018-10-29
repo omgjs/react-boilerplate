@@ -9,4 +9,3 @@ deploy:
   secret_access_key: "$AWS_SECRET"
   bucket: arn:aws:s3:::omgjs
   local-dir: build
-  acl: ""
