@@ -1,8 +1,29 @@
-# Tutorials
+# react-boilerplate
+
+This example project shows usage of @omgjs/turbo library
+to create react web applications
+
+```bash
+npm install
+```
+
+Run in dev mode:
+
+```bash
+npm start
+```
+
+Create production build in "./build" directory:
+
+```bash
+npm run build
+```
+
+## Tutorials
 
 To write good optimized components there are few rules, that you need to follow
 
-## PureComponent
+### PureComponent
 
 This is very good time saving feature of React. [Article about it](https://habr.com/company/redmadrobot/blog/318222/)
 
@@ -42,7 +63,7 @@ Bind prototype methods to object, so that pointer will not be changed, and value
 of parameter not going to be changed as well. PureComponent will not be
 re-rendered therefore.
 
-## Immutable
+### Immutable
 
 Prefer to use immutability. Immutable.js library can help. Or make it manually:
 
@@ -55,6 +76,6 @@ this.setState(prevState => ({
 It makes it easier to check props/state changes in shouldComponentUpdate method.
 You don't need to check data, but only to check pointer/pointers to data.
 
-## Emoji
+### Emoji
 
 🤘🤟💪😜😍❤️
