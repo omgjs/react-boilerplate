@@ -73,25 +73,25 @@ menuItemStyle = {
 	padding: "0",
 };
 menuLinkStyle = {
-	background: "#fff4d0",
+	// background: "#fff4d0",
 	color: "#bb9b2d",
 	fontFamily: "Segoe UI",
-	fontSize: "1.5em",
-	fontWeight: "normal",
+	fontSize: "16px",
+	fontWeight: "bold",
 	textDecoration: "none",
 	textTransform: "uppercase",
 	lineHeight: "24px",
 	display: "block",
 	margin: "1px 1px 1px 0",
-	padding: "0.5em",
+	padding: "0.5rem",
 	whiteSpace: "nowrap",
 };
 
-const headerElementsMargin = "2em";
+const headerElementsMargin = "2rem";
 
 logoStyle = {
 	marginRight: headerElementsMargin,
-	marginLeft: "5em",
+	marginLeft: "5rem",
 };
 logoLinkStyle = {
 	color: "#ab9858",

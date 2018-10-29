@@ -14,7 +14,6 @@ const routes = {
 			content: Home,
 			menu: Menu,
 		},
-		data: "/",
 	},
 	"/page": {
 		template: MainLayout,
@@ -22,6 +21,7 @@ const routes = {
 			content: Page,
 			menu: Menu,
 		},
+		data: "https://api.github.com/orgs/omgjs/repos",
 	},
 	"/page/:param": {
 		template: MainLayout,
