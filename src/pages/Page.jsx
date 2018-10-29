@@ -1,5 +1,5 @@
 import React from "react";
-import { componentWithPropTypes } from "@omgjs/turbo";
+import { dataComponentWithPropTypes } from "@omgjs/turbo";
 import { object } from "prop-types";
 
 /* eslint-disable camelcase */
@@ -17,23 +17,15 @@ const Page = ({ data: { data } }) =>
 const Loading = () => <h1>Loading...</h1>;
 
 const Rejected = () => <h1>REQUEST REJECTED!!!</h1>;
-// ({Loading, Rejected, Success}) =>
-function DataComponent(props) {
-	const {
-		data: { data },
-	} = props;
-	if (data.pending) {
-		return <Loading />;
-	}
-	if (data.rejected) {
-		return <Rejected />;
-	}
-	if (data.fulfilled) {
-		return <Page {...props} />;
-	}
-	return <h1>UNKNOWN STATE</h1>;
-}
 
-export default componentWithPropTypes(DataComponent, {
-	data: object,
+const Unknown = () => <h1>UNKNOWN STATE</h1>;
+
+export default dataComponentWithPropTypes({
+	Loading,
+	Rejected,
+	Unknown,
+	Fulfilled: Page,
+	PropTypes: {
+		data: object,
+	},
 });
