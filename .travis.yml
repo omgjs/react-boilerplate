@@ -1,0 +1,12 @@
+language: node_js
+node_js: 8
+branches:
+  only:
+    - master
+deploy:
+  provider: s3
+  access_key_id: "$AWS_KEY"
+  secret_access_key: "$AWS_SECRET"
+  bucket: arn:aws:s3:::omgjs
+  local-dir: build
+  acl: ""
