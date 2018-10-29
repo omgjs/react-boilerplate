@@ -13,7 +13,7 @@ const RepositoryListItem = ({ repo: { name, html_url, description } }) => (
 );
 /* eslint-enable */
 
-const RepositoryList = ({ data: { data } }) =>
+const RepositoryList = ({ data }) =>
 	data.value.map(repo => (
 		<React.Fragment key={repo.name}>
 			<RepositoryListItem repo={repo} />
