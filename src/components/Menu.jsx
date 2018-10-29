@@ -16,6 +16,7 @@ export default () => (
 		<MenuItem url="/" title="Home" />
 		<MenuItem url="/page" title="Fetch Data" />
 		<MenuItem url="/page/453798" title="Page with params" />
+		<MenuItem url="/page2/params" title="Another Page with params" />
 	</ul>
 );
 

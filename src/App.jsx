@@ -5,6 +5,7 @@ import MainLayout from "layouts/MainLayout";
 import Home from "pages/Home";
 import Page from "pages/Page";
 import PageWithParam from "pages/PageWithParam";
+import PageWithParams2 from "pages/PageWithParams2";
 import Menu from "components/Menu";
 
 const routes = {
@@ -27,6 +28,13 @@ const routes = {
 		template: MainLayout,
 		templateParams: {
 			content: PageWithParam,
+			menu: Menu,
+		},
+	},
+	"/page2/:param": {
+		template: MainLayout,
+		templateParams: {
+			content: PageWithParams2,
 			menu: Menu,
 		},
 	},
