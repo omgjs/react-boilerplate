@@ -12,30 +12,30 @@ const routes = {
 	"/": {
 		template: MainLayout,
 		templateParams: {
-			content: Home,
-			menu: Menu,
+			Content: Home,
+			Menu,
 		},
 	},
 	"/page": {
 		template: MainLayout,
 		templateParams: {
-			content: Page,
-			menu: Menu,
+			Content: Page,
+			Menu,
 		},
 		data: "https://api.github.com/orgs/omgjs/repos",
 	},
 	"/page/:param": {
 		template: MainLayout,
 		templateParams: {
-			content: PageWithParam,
-			menu: Menu,
+			Content: PageWithParam,
+			Menu,
 		},
 	},
 	"/page2/:param": {
 		template: MainLayout,
 		templateParams: {
-			content: PageWithParams2,
-			menu: Menu,
+			Content: PageWithParams2,
+			Menu,
 		},
 	},
 };
