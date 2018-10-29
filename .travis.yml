@@ -8,6 +8,6 @@ deploy:
   provider: s3
   access_key_id: "$AWS_KEY"
   secret_access_key: "$AWS_SECRET"
-  bucket: arn:aws:s3:::omgjs
+  bucket: omgjs
   local-dir: build
   skip_cleanup: true
