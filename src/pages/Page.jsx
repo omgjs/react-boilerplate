@@ -3,16 +3,22 @@ import { dataComponentWithPropTypes } from "@omgjs/turbo";
 import { object } from "prop-types";
 
 /* eslint-disable camelcase */
-const Page = ({ data: { data } }) =>
-	data.value.map(({ name, html_url, description }) => (
-		<React.Fragment key={name}>
-			<h2>
-				<a href={html_url}>{name}</a>
-			</h2>
-			<p>{description}</p>
+const RepositoryListItem = ({ repo: { name, html_url, description } }) => (
+	<>
+		<h2>
+			<a href={html_url}>{name}</a>
+		</h2>
+		<p>{description}</p>
+	</>
+);
+/* eslint-enable */
+
+const RepositoryList = ({ data: { data } }) =>
+	data.value.map(repo => (
+		<React.Fragment key={repo.name}>
+			<RepositoryListItem repo={repo} />
 		</React.Fragment>
 	));
-/* eslint-enable */
 
 const Loading = () => <h1>Loading...</h1>;
 
@@ -24,7 +30,7 @@ export default dataComponentWithPropTypes({
 	Loading,
 	Rejected,
 	Unknown,
-	Fulfilled: Page,
+	Fulfilled: RepositoryList,
 	PropTypes: {
 		data: object,
 	},
