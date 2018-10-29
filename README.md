@@ -7,7 +7,7 @@ to create react web applications
 npm install
 ```
 
-Run in dev mode:
+Run in dev mode (defaults to [http://localhost:3000](http://localhost:3000):
 
 ```bash
 npm start
