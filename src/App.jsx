@@ -40,4 +40,4 @@ const routes = {
 	},
 };
 
-initApplication(routes);
+initApplication(routes, true);
